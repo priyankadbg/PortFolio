@@ -89,8 +89,42 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    margin-top: 10px;
+    font-size: 30px;
+    /* gap: 50px; */
+    letter-spacing: 1.2px;
+    line-height: 40px;
+    text-align: justify;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+.tab-title{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-link{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-link::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+.tab-link.active-link::after{
+    width: 50%;
+
 }
